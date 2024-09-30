@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interactive Website Development</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 -->
+</head>
+<body>
+  <!-- Page 1 -->
+  <div id="page1">
+    <center>
+      <h1><u>What is an Interactive Website?</u></h1>
+      <img src="https://cdn.dribbble.com/users/4055494/screenshots/15215756/media/d2b66c4ca0192aa26d103448b3d1518b.gif" alt="sample image"><br>
+      <p>An interactive website engages users by responding to their actions, such as clicking, scrolling, or entering information. It offers dynamic features like forms, animations, personalized content, chatbots, and interactive graphics, making the experience more engaging and user-friendly.</p>
+      <button id="changeColorBtn">Change Background Color</button><br>
+      <div id="smartphoneIcon" class="smartphone-icon"></div>
+      <pre id="clickInstruction"><b>Click the phone icon to proceed </b></pre>
+    </center>
+  </div>
+
+  <!-- Page 2:Form Validation -->
+  <div id="page2" style="display:none;">
+    <center>
+      <form id="contactForm">
+        <h2>Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="3" required></textarea>
+
+        <button type="submit">Submit</button>
+        <p id="formFeedback"></p>
+      </form>
+      <button id="backToPage1" class="back-button">&#9664; Back</button> 
+    </center>
+  </div>
+
+  <!-- Page 3:API Posts -->
+  <div id="page3" style="display:none;">
+    <center>
+      <h2>Recent Posts</h2>
+      <ul id="postsList"></ul>
+      <button id="backToPage2" class="back-button">&#9664; Back</button> 
+    </center>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
